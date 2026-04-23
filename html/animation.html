@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.box {border: 2px solid black;
+			width: 100px;
+			height: 100px;
+			background-color:violet;
+
+			position: absolute;
+			left:0%;
+			top:0%;
+
+			animation-name: box;
+			animation-duration: 10s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+			animation-delay:1s; }
+
+		@keyframes box{
+
+			    0%{border-radius: 0%;}
+			    15%{background-color:indigo;}
+			    30%{background-color:skyblue; }
+			    45%{background-color: green;}
+			    60%{background-color: yellow;}
+			    80%{background-color:orange;}
+                100%{border-radius:50%;
+			    	background-color:red;
+			    	left: 50%;
+			        top: 50%;}
+                 }
+	</style>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+
+</body>
+</html>
